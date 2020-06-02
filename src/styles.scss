@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: linear-gradient(155deg, #083643, #b1e001, #e06101);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+.content{
+    height: calc(100vh - 30px);
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 10px;
+    margin: 15px;
+}
+button{
+    border-radius: 100px !important;
+}
+.center{
+    text-align: center;
+    padding: 15px;;
+}
+img{
+    max-width: 100%;
+}
+.column{
+    flex-direction: column;
+}
+.options-card{
+    display: flex !important;
+    align-items: center;
+    margin-bottom: 20px;;
+}
+.options-card img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.start-top{
+    max-width: 50%;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+.mat-card {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.mat-card:hover {
+    background-position: right center; /* change the direction of the change here */
+}
